@@ -1,0 +1,89 @@
+/************ Skills CSS ************/
+.skill {
+  position: relative;
+  padding: 150px 0 100px 0;
+  background-image: url("../../assets/img/color-sharp.png");
+  background-position: top center;
+  background-size: cover;
+}
+
+.skill-bx {
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+
+.skill h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.skill p {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
+}
+
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Skill Category Title */
+.skill-slider .item h5 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #fff;
+  border-radius: 8px;
+}
+
+/* Skill Items - Small Boxes */
+.skill-slider .item ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  border-radius: 8px;
+}
+
+.skill-slider .item ul li {
+  background: #222;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-weight: 500;
+
+  /* Gradient Border */
+  border-image-source: linear-gradient(90deg, #00bcd4, #4caf50);
+  border-image-slice: 1;
+}
+
+/* Hover Effect */
+.skill-slider .item ul li:hover {
+  background: linear-gradient(90deg, #00bcd4, #4caf50);
+  color: #151515;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.8), 0 0 15px rgba(76, 175, 80, 0.6);
+  border-radius: 8px;
+}
+
+/* Background Image */
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}

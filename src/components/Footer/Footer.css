@@ -1,0 +1,43 @@
+/************ Footer Styling ************/
+.footer {
+  padding: 10px 0;
+  background-color: #121212;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Footer Logo Styling */
+.footer-logo {
+  width: 180px; /* Adjust as needed */
+  height: auto;
+}
+
+/* Social Icons Styling */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Spacing between icons */
+  margin-top: 10px;
+}
+
+.social-icons a {
+  width: 90px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.social-icons img {
+  width: 60%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.social-icons a:hover img {
+  opacity: 0.8;
+}

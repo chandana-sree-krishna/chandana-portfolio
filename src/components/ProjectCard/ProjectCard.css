@@ -1,0 +1,32 @@
+.proj-imgbx {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.proj-txtx {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  color: white;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.proj-imgbx:hover {
+  transform: scale(1.05);
+}
+
+.proj-imgbx:hover .proj-txtx {
+  opacity: 1;
+}

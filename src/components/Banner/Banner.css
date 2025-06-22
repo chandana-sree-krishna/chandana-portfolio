@@ -1,0 +1,138 @@
+/************ Banner Css ************/
+.banner {
+  margin-top: 0;
+  padding: 0; /* Remove extra padding */
+  width: 100vw; /* Ensure full viewport width */
+  height: 100vh; /* Ensure full viewport height */
+  background-image: url("../../assets/img/banner-bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps the background static */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.static-header-img {
+  animation: none !important;
+  position: static !important;
+  transform: none !important;
+}
+
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(
+    90.21deg,
+    rgba(170, 54, 124, 0.5) -5.91%,
+    rgba(74, 47, 189, 0.5) 111.58%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.banner h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/************ Rotating Text Styling ************/
+.banner h2.rotating-text {
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffcc00; /* Yellow for visibility */
+  margin-top: 10px;
+  display: block;
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+
+/************ Paragraph Styling ************/
+.banner p {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+
+/************ CTA Button Styling ************/
+.banner button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #00bcd4, #4caf50);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.banner button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.banner button:hover {
+  background: linear-gradient(90deg, #4caf50, #00bcd4);
+  transform: scale(1.05);
+}
+
+.banner button:hover svg {
+  margin-left: 25px;
+}
+
+/************ Responsive Styling ************/
+@media (max-width: 768px) {
+  .banner {
+    padding: 180px 50px 80px 50px;
+    text-align: center;
+  }
+  .banner h1 {
+    font-size: 45px;
+  }
+  .banner h2.rotating-text {
+    font-size: 30px;
+  }
+  .banner p {
+    font-size: 16px;
+  }
+  .banner button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    padding: 150px 30px 60px 30px;
+  }
+  .banner h1 {
+    font-size: 35px;
+  }
+  .banner h2.rotating-text {
+    font-size: 25px;
+  }
+  .banner p {
+    font-size: 14px;
+  }
+  .banner button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}

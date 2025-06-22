@@ -1,0 +1,88 @@
+.experience {
+  padding: 100px 50px;
+  background: linear-gradient(
+    90.21deg,
+    rgba(170, 54, 124, 0.5) -5.91%,
+    rgba(74, 47, 189, 0.5) 111.58%
+  );
+  text-align: center;
+}
+
+.experience h2 {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.horizontal-timeline {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px 0;
+  gap: 20px;
+  scroll-behavior: smooth;
+}
+
+.timeline-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+  min-width: 220px;
+  max-width: 250px;
+  flex-shrink: 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-icon {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.timeline-content h3 {
+  font-size: 20px;
+  color: #ffcc70;
+  margin: 5px 0;
+}
+
+.timeline-date {
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+.company-logo {
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+  margin: 10px auto 10px;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
+  background-color: #fff; /* optional: helps with logos having transparent backgrounds */
+  padding: 10px; /* optional: padding around logos */
+  border-radius: 8px; /* optional: rounded edges */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience {
+    padding: 80px 30px;
+  }
+
+  .timeline-item {
+    min-width: 180px;
+  }
+
+  .company-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .timeline-content h3 {
+    font-size: 18px;
+  }
+}
