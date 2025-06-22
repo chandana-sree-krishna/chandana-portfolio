@@ -28,7 +28,7 @@ const skills = [
       "Express.js",
       "GraphQL",
       "Spring Boot",
-      "KaKka",
+      "Kafka",
       "Apache Spark",
     ],
   },
