@@ -74,6 +74,7 @@ const Skills = () => {
                 responsive={responsive}
                 infinite={true}
                 className="skill-slider"
+                containerClass="custom-carousel-container"
               >
                 {skills.map((skill, index) => (
                   <div className="item" key={index}>

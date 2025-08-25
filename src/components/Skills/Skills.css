@@ -87,3 +87,22 @@
   width: 40%;
   z-index: -4;
 }
+
+/* Target arrows using the custom container class */
+.custom-carousel-container .react-multi-carousel-arrow {
+  z-index: 1000 !important;
+  transform: scale(1.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Move left arrow */
+.custom-carousel-container .react-multi-carousel-arrow-left {
+  left: -60px !important;
+}
+
+/* Move right arrow */
+.custom-carousel-container .react-multi-carousel-arrow-right {
+  right: -60px !important;
+}

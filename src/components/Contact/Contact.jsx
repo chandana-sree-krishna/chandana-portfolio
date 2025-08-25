@@ -17,6 +17,7 @@ export const Contact = () => {
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
   const [status, setStatus] = useState({});
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -76,15 +77,21 @@ export const Contact = () => {
         <Row className="align-items-center">
           <Col size={12} md={6}>
             <TrackVisibility>
-              {({ isVisible }) => (
-                <img
-                  className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
-                  }
-                  src={contactImg}
-                  alt="Contact Us"
-                />
-              )}
+              {({ isVisible }) => {
+                if (isVisible && !hasAnimated) {
+                  setHasAnimated(true);
+                }
+
+                return (
+                  <img
+                    className={
+                      hasAnimated ? "animate__animated animate__zoomIn" : ""
+                    }
+                    src={contactImg}
+                    alt="Contact Us"
+                  />
+                );
+              }}
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>

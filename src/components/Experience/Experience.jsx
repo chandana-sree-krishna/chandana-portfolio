@@ -9,8 +9,13 @@ import VosynLogo from "../../assets/img/vosyn_logoBg.png";
 
 const experiences = [
   {
+    title: "Lead Developer",
+    duration: "Jul 2025 – Present",
+    logo: VosynLogo,
+  },
+  {
     title: "Data Engineer",
-    duration: "Mar 2025 – Present",
+    duration: "Mar 2025 – July 2025",
     logo: VosynLogo,
   },
   {
