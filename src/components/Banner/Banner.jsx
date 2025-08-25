@@ -67,10 +67,19 @@ export const Banner = () => {
                     </span>
                   </h2>
                   <p>
-                    Passionate and dedicated Full-Stack Developer with a
-                    Master’s in Computer Science and 2 years of industry
-                    experience. I thrive on continuous learning, embracing
-                    challenges, and exploring new technologies.
+                    I am currently a Lead Developer - Data Engineer with a
+                    Master’s in Computer Science and 2 years of professional
+                    experience. My passion lies in designing and building
+                    scalable data pipelines, ETL processes, and data-driven
+                    solutions that empower business decisions. Alongside data
+                    engineering, I also have hands-on experience as a Full-Stack
+                    Developer, which gives me a strong understanding of
+                    end-to-end application development and deployment. I thrive
+                    on solving complex data challenges, optimizing workflows,
+                    and continuously learning new technologies. I am open to
+                    opportunities primarily in Data Engineering, while also
+                    welcoming roles that leverage my full-stack development
+                    background.
                   </p>
                 </div>
               )}
